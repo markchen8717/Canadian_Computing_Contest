@@ -1,8 +1,11 @@
 #include <iostream>
 
-//three array of strings
-//print all nested combinations of strings in order starting with the first array
-//each line of string input may contain spaces
+//Q data sets
+	//for each set
+	//three array of strings
+	//print all nested combinations of strings in order starting with the first array
+	//each line of string input may contain spaces
+//The output for different data sets are to be separated by a single blank line.
 
 
 using namespace std;
