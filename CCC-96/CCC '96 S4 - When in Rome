@@ -1,0 +1,85 @@
+#include<bits/stdc++.h>
+
+//sum two roman numerals
+//input is not greater than 1000
+//print message if sum is greater than 1000
+
+//implement conversions betwween regular numers and roman numers
+
+
+using namespace std;
+
+int Q;
+//think outside the box, add in all the possible "RULE#1 & #2" values in accending order
+string arr [] = {"I","IV","V","IX","X","XL","L","XC","C","CD","D","CM","M"}; 
+int char2Num (char c)
+{
+	switch(c)
+	{
+		case 'I' : return 1;
+		case 'V' : return 5;
+		case 'X' : return 10;
+		case 'L' : return 50;
+		case 'C' : return 100;
+		case 'D' : return 500;
+		case 'M' : return 1000;
+	}
+}
+
+int toNum (string rom)
+{	
+	int len = rom.length();
+	int sum = char2Num(rom[len-1]);
+	for(int i = len-2;i >=0;i--)
+	{
+		int cur = char2Num(rom[i]);
+		int b4 = char2Num(rom[i+1]);
+		if(cur < b4) sum = sum-b4+(b4-cur);
+		else sum += cur;
+	}
+	return sum;
+	
+}
+
+string toRom (int num)
+{
+	string output = "";
+	if(num > 1000)
+    return "CONCORDIA CUM VERITATE";
+	for(int i = 12; i >=0;i--)
+	{
+		int val = toNum(arr[i]);
+		if(val <= num)
+		{
+			num-=val;
+			output+=arr[i];
+			output+=toRom(num);
+			break;
+		}
+	}
+	return output;
+}
+
+int main()
+{
+	cin>>Q;
+	while(Q--)
+	{
+    
+		string in,a,b;
+		cin>>in;
+		size_t plus = in.find("+");
+		size_t equal = in.find("=");
+		a = in.substr(0,plus);
+		b = in.substr(plus+1,equal-plus-1);
+		cout<<in<<toRom(toNum(a)+toNum(b))<<"\n";
+  
+  /*
+    int in;
+    cin>>in;
+    cout<<toRom(in)<<"\n";
+    */
+		
+	}
+	return 0;
+}
