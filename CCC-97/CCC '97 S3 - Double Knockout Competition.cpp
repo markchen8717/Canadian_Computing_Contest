@@ -2,9 +2,13 @@
 //n test cases
   //t number of teams
   //at the end of a round, one win and one lose
-//last remaining team has one or fewer losses
-//an undefeated team never plays a team with one loss
-//as many team as possible are paired each round
+//an undefeated team never plays a team with one loss, and vice versa
+  //at each round
+    //half of the 1loss is eliminated
+    //half of the undefeated is 1loss
+//edge case when 1 undefeated and 1loss left
+  //undefeated becomes 1loss, resulting two 1loss
+  //next round, one 1loss gets eliminated
 
 
 
