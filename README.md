@@ -15,6 +15,7 @@
 - Classify the problem 
 - Brainstorm possbile solutions
 	- Imagine doing the cs program on paper
+- Note down potential problems you may encouter
 - Search for an appropriate algorithm
 	- Check for:
 		- Time complexity
@@ -27,6 +28,7 @@
 - Ask the right questions why the program don't work. 
   - Example: Did I spell my output words correctly? 
     - Should of copy & pasted ^^
+- Refer to potential problem list
 - Make several test cases to help with debugging
   
 # Comments? Conserns? Suggestions? 
