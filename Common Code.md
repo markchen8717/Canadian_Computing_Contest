@@ -1,2 +1,2 @@
 - Limiting output to x decimal points
-    - 
+    - cout<<fixed<<showpoint<<setprecision(x)<<variable
