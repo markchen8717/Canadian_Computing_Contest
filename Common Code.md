@@ -3,4 +3,4 @@
 -   Setting output field width to x 
     -   cout<<setw(x)<<str
 -   Limiting output to x decimal points
-    -   cout<<fixed<<showpoint<<setprecision(x)<<variable
+    -   cout<<fixed<<showpoint<<setprecision(x)<<real
