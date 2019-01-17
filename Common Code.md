@@ -1,4 +1,4 @@
-#Some common C++ code that I wish I knew at times 
+# Some common C++ code that I wish I knew at times 
 
 -   Setting output field width to x 
     cout<<setw(x)<<str
