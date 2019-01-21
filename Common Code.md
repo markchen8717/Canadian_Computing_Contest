@@ -6,5 +6,5 @@
     -   cout<<fixed<<showpoint<<setprecision(x)<<real;
 -   Rounding a double to the nearest integer
     -   real = double(int(real+0.5));
--   Rounding a double to the nearest x decimal place
+-   Rounding a double to the nearest x decimal place(s)
     -   real = double(int(real*pow(10,x)+0.5));
