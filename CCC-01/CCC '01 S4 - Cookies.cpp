@@ -1,7 +1,3 @@
-
-
-
- 
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -157,7 +153,7 @@ int main()
 			rad = min(rad, tmpRad);
 	} while (next_permutation(bitset.begin(),bitset.end()));
 	rad *=2;
-	//rad += 0.005;
+	rad = double(int(rad*100 + 0.5))/100;
 	cout << fixed << showpoint << setprecision(2) << rad;
 	return 0;
 }
