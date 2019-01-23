@@ -46,7 +46,7 @@ int main() {
 			{
 				int slowest = people[i].second;
 				int best = 0x3f3f3f3f;
-				for (int k = 1; k <= j; k++)
+				for (int k = 1; k <= j && i-k+1 >=1; k++) //travers all k possible group mates
 				{
 					slowest = max(slowest, people[i - k + 1].second);
 					if (best > dp[i - k][j] + slowest)
