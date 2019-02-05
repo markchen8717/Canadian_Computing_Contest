@@ -1,0 +1,62 @@
+#include <bits/stdc++.h>
+
+/*snakes (from 54 to 19, from 90 to 48 and from 99 to 77)
+ladders (from 9 to 34, from 40 to 64 and from 67 to 86).
+
+win at 100
+you cant go over 100
+quit when you roll 0
+
+
+*/
+
+using namespace std;
+
+
+
+#define x first
+#define y second
+
+int input,pos = 1;
+
+int main()
+{
+	ios_base::sync_with_stdio(false);
+	cin.tie(NULL);
+	
+	while(1){
+		cin>>input;
+		if(!input)
+		{
+			cout<< "You Quit!";
+			return 0;
+		}
+		int tmp = pos+input;
+		if(tmp > 100)
+			continue;
+		if(tmp == 100)
+		{
+			cout<<"You Win!";
+			return 0;
+		}
+		if(tmp == 9)
+			tmp = 34;
+		else if (tmp == 40)
+			tmp = 64;
+		else if (tmp == 67)
+			tmp = 86;
+		else if (tmp == 54)
+			tmp = 19;
+		else if (tmp ==90)
+			tmp = 48;
+		else if (tmp == 99)
+			tmp = 77;
+		pos = tmp;
+		cout<<"You are now on square "<<pos<<"\n";
+	}
+	
+	
+
+
+	return 0;
+}
