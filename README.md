@@ -15,11 +15,13 @@
 - Classify the problem 
 - Brainstorm possbile solutions
 	- Imagine doing the cs program on paper
-- Note down potential problems you may encouter
 - Search for an appropriate algorithm
 	- Check for:
 		- Time complexity
 		- Memory complexity
+- Test the algorithmn with your test cases
+- Note down potential problems you may encouter
+
 
 ### 4. Code
 - Spending more time typing than thinking likely means that there’s not enough thought behind the code being written. 
