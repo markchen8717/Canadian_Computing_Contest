@@ -2,14 +2,14 @@
 ## My Problem Solving Process
 
 ### 1. Define the problem
-- Skin the problem down into its backbone
+- Skin the problem down to its backbone
 	- Filter out the useless information from the original question and simplify it
 - Re-iterate the problem with the new definition
 	
 ### 2. Concept and Fundamental
-- Note down any significant points on the first time reading the original problem
+- Note down any significant points on the first reading of the original problem
 	- Making a highlight of the key concepts of the problem
-- Verify the notes on the second time reading the problem
+- Verify the notes during the second reading the simplified problem
 	
 ### 3. Algorithmn 
 - Classify the problem 
