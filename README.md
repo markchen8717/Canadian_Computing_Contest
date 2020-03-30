@@ -9,7 +9,7 @@
 ### 2. Concept and Fundamental
 - Note down any significant points on the first reading of the original problem
 	- Making a highlight of the key concepts of the problem
-- Verify the notes during the second reading the simplified problem
+- Verify the notes during the second reading of the simplified problem
 	
 ### 3. Algorithmn 
 - Classify the problem 
